@@ -25,8 +25,8 @@ jobs:
         run: |
          pwd
          ls -R
-      - name: 📦 保存输出文件
-  	uses: actions/upload-artifact@v4
-  	with:
-    	  name: output-files
+      - name:
+        uses: actions/upload-artifact@v4
+        with:
+          name: output-files
           path: output/
