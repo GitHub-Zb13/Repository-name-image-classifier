@@ -97,24 +97,28 @@ def classify_images_by_timestamp_range(source_folder, target_folder, start_times
         # 根据文件类型分类
         if file_type == "keypoints":
             dest_path = os.path.join(keypoints_folder, filename)
+            print("复制到:",filename)
             shutil.copy2(source_path, dest_path)
             stats["keypoints"] += 1
             print(f"✅ 已分类(关键点): {filename} (时间戳: {timestamp})")
             
         elif file_type == "forwardview":
             dest_path = os.path.join(forwardview_folder, filename)
+            print("复制到:",filename)
             shutil.copy2(source_path, dest_path)
             stats["forwardview"] += 1
             print(f"✅ 已分类(前视): {filename} (时间戳: {timestamp})")
             
         elif file_type == "panoramicview":
             dest_path = os.path.join(panoramicview_folder, filename)
+            print("复制到:",filename)
             shutil.copy2(source_path, dest_path)
             stats["panoramicview"] += 1
             print(f"✅ 已分类(全景): {filename} (时间戳: {timestamp})")
             
         else:
             dest_path = os.path.join(other_folder, filename)
+            print("复制到:",filename)
             shutil.copy2(source_path, dest_path)
             stats["other"] += 1
             print(f"❓ 无法分类: {filename}")
