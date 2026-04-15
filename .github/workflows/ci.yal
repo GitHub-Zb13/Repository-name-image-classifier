@@ -19,5 +19,5 @@ jobs:
       - name: 运行脚本
         run: |
           python classify_with_time_range.py \
-            --src test_data \
-            --dst output
+            --src /home/zhoubin/github_repository/Repository-name-image-classifier/test_data \
+            --dst /home/zhoubin/github_repository/Repository-name-image-classifier/test_data
