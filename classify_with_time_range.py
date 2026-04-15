@@ -201,9 +201,6 @@ def classify_with_time_range():
     
     classify_images_by_timestamp_range(source_folder, target_folder, start_timestamp, end_timestamp)
 
-# 直接运行版本
-'''if __name__ == "__main__":
-    classify_with_time_range()'''
     
 def main():
     parser = argparse.ArgumentParser(description="图片分类工具")
